@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				width: 1700px;
+				margin:0 auto;
+				background: url(up.jpeg);
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-size:cover;
+				background-position: 50% 40%;
+				}
+			header {
+				height: 900px;
+				width: auto;
+				background:url(l.jpeg) ;
+				background-size: 98%;
+				background-repeat: no-repeat;
+				background-position: 50% 30%;
+				opacity: 0.8;
+			}
+			header:hover{
+				cursor: pointer;
+				opacity: 1.0;
+			}
+			h1{
+				margin-top: 100px;
+				margin-left: 250px;
+				font-size: 300px;
+				font-family: "french script mt";
+				text-shadow: 5px 5px 5px darkorange;
+				color: lightgoldenrodyellow;
+			}
+			h1:hover{
+				transform: translate(150px,70px);
+				transition: 3s;
+				cursor: pointer;
+			}
+			h2{
+				margin-top: 80px;
+				margin-left: 700px;
+				font-size: 80px;
+				font-family: "宋体";
+				color: azure;
+				-webkit-text-stroke: 2px lightsalmon;
+			}
+			h2:hover{
+				transform: translateY(-50px);
+			}
+			#title,nav {
+				display: inline-block;
+			}
+			/* #title{
+				width: 40px;
+				height: 30px;
+				margin-left: 300px;
+				margin-top: 200px;
+			} */
+			nav {
+				float: right;
+				margin-right: 30px;
+				margin-top: 830px;
+			}
+			#box{
+				margin: 20px;
+				color: #F5F5F5;
+				display: inline-block;
+				font-size: 20px;
+				text-shadow: 5px 5px 5px #FF0000;
+				/* background: #8FBC8F; */
+			}
+			#box:hover{
+				transform:scale(1.2) rotate(7deg);
+				/* transform: rotate(3deg); */
+			}
+			main {
+				height: 2500px;
+				padding: 10px;
+			}
+			main article {
+				width: 70%;
+				height: 100%;
+				/* background: lightgreen; */
+				display: inline-block;
+				}
+				#au{
+					height: 1%;
+					margin-left: 10px;
+					cursor: pointer;
+				}
+				#top {
+					height:600px;
+					background: whitesmoke;
+					margin: 40px;
+				}
+				#top .summary{
+					height: 100%;
+					/* background: ghostwhites; */
+				}
+				#top .summary div:first-child{
+					width: 70%;
+					height:85%;
+					background: lightgrey;
+					margin-top: 30px;
+					margin-left: 30px;
+					display: inline-block;
+					border: 5px solid gray;
+					/* padding: 10px; */
+					border-radius: 3px;
+					cursor: pointer;
+					overflow: hidden;
+				}
+				#top .summary div:first-child :hover{
+					transform: scale(1.3);
+					transition: 2s;
+					cursor: pointer;
+				}
+				h3,h4,h5,h6{
+					color: darkseagreen;
+					font-size: 50px;
+					font-family: "bodoni mt black";
+					text-align: center;
+				}
+				h3{
+					font-size: 40px;
+				}
+				p{
+					font-size: 25px;
+					font-style: initial;
+				}
+				#top .summary div:last-child{
+					width: 20%;
+					height: 80%;
+				    /* background: white; */
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 40px;
+					margin-left: 30px;
+				}
+				#top .summary div:last-child :hover{
+					transform:scale(1.1);
+					opacity: 0.8;
+					transition: 1s;
+					cursor: pointer;
+				}
+				#mid{
+					width: 93%;
+					height: 800px;
+					background: aliceblue;
+					margin-top: 100px;
+					margin-left: 40px;
+					display: inline-block;
+				}
+				#mid .summary{
+					height: 45%;
+					width: 90%;
+					/* background:lavenderblush; */
+					margin-top: 50px;
+					margin-left: 65px;
+				}
+				#mid  #box8{
+					margin-top: 20px;
+					margin-left:80px;
+					display: inline-block;
+					border: 5px solid powderblue;
+					 padding: 10px;
+					border-radius: 3px;
+					cursor: pointer;
+					overflow: hidden;
+				}
+				img:hover{
+					transform: scale(1.2);
+					transition: 2s;
+					cursor: pointer;
+				} 
+				#mid #box9{
+					background: ghostwhite;
+					margin-top: 20px;
+					margin-left: 40px;
+					display: inline-block;
+					border: 5px solid palegoldenrod;
+					 padding: 10px;
+					border-radius: 3px;
+					cursor: pointer;
+					overflow: hidden;
+				}
+				h3 {
+					margin-bottom: 10px;
+				}
+				#right{
+					width: 93%;
+					height: 30%;
+					margin-top: 100px;
+					background:whitesmoke;
+					margin-left: 40px;
+					position: relative;
+					border: 10px solid black ;
+					box-sizing: border-box;
+					/* margin-right: 20px; */
+					border-radius: 10px;
+					cursor: pointer;
+					border-radius:30px ;
+					overflow: hidden; 
+				}
+				#box10{
+					width:65px;
+					height: 400px;
+				}
+				#right .summary{
+					width: 900px;
+					height: 210px;
+					/* background: lightpink; */
+					font-size: 80px;
+					color: red;
+					text-shadow: 5px 5px 5px grey;
+					font-weight: bold;
+					position: absolute;
+					left:80px;
+					top: 270px;
+				}
+				main aside {
+					width: 450px;
+					height: 100%;
+					/* background:lightyellow; */
+					display: inline-block;
+					float: right;
+					margin-top: 50px;
+				}
+				main aside div:{
+					margin-top: 100px;
+				}
+				#one{
+					width: 48%;
+					height:80%;
+					margin-top: 20px;
+					/* background: lavender; */
+					display: inline-block;
+				}
+				#two{
+					width: 48%;
+					height: 80%;
+					margin-top: 20px;
+					/* background: palegreen; */
+					float: right;
+					display: inline-block;
+				}
+				#box20{
+					margin:30px;
+					/* background: #D3D3D3; */
+				}
+				#te{
+					font-size: 20px;
+					font-style: inherit;
+					text-align: center;
+				}
+				#co{
+					margin: 20px;
+					border-left:10px solid black;	
+				}
+				#co:hover{
+					transform: scale(1.2);
+					transition: 2s;
+					cursor: pointer;
+				}
+				#box15{
+					margin-top: 100px;
+					margin-left:25px;
+				}
+				#box15:hover{
+					transform: translateY(-50px);
+					transition: 2s;
+				}
+				footer {
+					width: 1500px;
+					height: 200px;
+					border-top: 10px solid lightgray ;
+					box-sizing: border-box;
+					margin-top: 80px;
+					margin-left: 100px;
+				}
+				#box18, #box19 {
+					display: inline-block;
+					font-size: 30px;
+					margin-left: 80px;
+				}
+				#box18{
+					margin-top: 30px;
+					/* background: #D8BFD8; */
+				}
+				#box18:hover{
+					transform:translate(20px,20px) rotate(-360deg);
+					transition: 5s;
+				}
+				#box19{
+					/* background: #FFFFFF; */
+				}
+				#box16{
+					width: 1600px;
+					height: 400px;
+					/* background:azure; */
+					margin-left: 50px;
+					text-align: center;
+				}
+				#box13{
+					width: 1500px;
+					height: 300px;
+					font-size: 30px;
+					/* background: #D8BFD8; */
+					display: inline-block;
+				}
+				#A,#B,#C,#D,#E{
+					margin:50px;
+					display: inline-block;
+				}
+				h6{
+					margin-top: 20px;
+					margin-left:20px;
+				}
+		</style>
+	</head>
+	<body>
+		<header>
+			
+			<div id="title">
+				<h1>Coldplay</h1>
+				<h2>温暖而治愈</h2>
+			</div>
+			<nav>
+				<ul>
+					<div id="box">
+					<b>基本信息</b>
+					</div>
+					<div id="box">
+					<b>早年经历</b>
+					</div>
+					<div id="box">
+					<b>精选专辑</b>
+					</div>
+					<div id="box">
+					<b>更多乐队</b>
+					</div>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<section id="au">
+					<img src="" >
+					<audio src="01.mp3"controls preload loop>
+					</audio>
+				</section>
+				<section id="top">
+					<div class="summary">
+						<div>
+							<img src="b.jpeg" width="100%" height="100%">
+						</div>
+						<div >
+							<h3>¤基本信息¤</h3>
+							<p>酷玩乐队（Coldplay），英国摇滚乐队，1996年成立于伦敦，由主唱克里斯·马汀、贝斯手盖伊·贝瑞曼、吉他手强尼·邦蓝以及鼓手威尔·查平组成。创意总监及前经纪人菲尔·哈维通常被视作乐队的第五个成员。</p>
+						</div>
+					</div>
+				</section>
+				<section id="right">
+					<div id="box10">
+						<video src=" viv.mp4 " autoplay muted loop width="1080px" height="750px"></video>
+					</div>
+					<div class="summary">
+						Coldplay-Viva La Vida (Live In São Paulo)
+					</div>	
+					</div>
+				</section>
+				<section id="mid">
+					<div class="summary">
+						<div id="abc">
+							<h4>◇早年经历◇</h4>
+							<p>酷玩乐队的成员都来自普通的工人家庭。克里斯·马汀从小就开始弹钢琴，15岁开始已经混迹于各种乐队，并且得到过汤姆·威兹的称赞。强尼·邦蓝受到了埃里克·克莱普顿、吉米·亨德里克斯等吉他手的影响，从11岁开始弹奏吉他。来自苏格兰的盖伊·贝瑞曼则受到了一些放克音乐的熏陶而拿起了贝斯。再加入酷玩乐队之前威尔·查平曾经演奏过吉他、贝司、笛子等各种乐器。</p>
+							<p>1996年9月，刚进入伦敦大学学院的克里斯·马汀与强尼·邦蓝相遇，在之后的学年里计划着组建一个乐队。最后他们组建了一个叫做“Pectoralz”的乐队，期间盖伊·贝瑞曼也加入了他们。1997年，乐队重新更名为“Starfish”，也已经在许多俱乐部中完成了多场演出。不久，威尔·查平也作为鼓手加入了他们。乐队最终正式更名为“酷玩乐队”。</p>
+						</div>
+					</div>
+					<div id="box8">
+						<img src="e.jpeg" width="410px" height="300px">
+					</div>
+					<div id="box9">
+						<img src="love.jpg" width="410px" height="300px">
+					</div>
+				</section>
+			</article>
+			<aside>
+				<div>
+					<h6>★精选专辑★</h6>
+				</div>
+				<section id="one">
+					<div id="box20">
+						<div id="co">
+						<img src="viva.jpg" width="100%" height="100%">
+						</div>
+						<div id="te">
+							<p>Viva La Vida</p>
+							<p>2008-06-11</p>
+						</div>
+					</div>
+					<div id="box20">		
+						<div id="co">
+							<img src="A.png" width="100%" height="">
+						</div>
+						<div id="te">
+							<p> A Sky Full of Stars</p>
+							<p>2014-06-29 </p>
+						</div>
+					</div>
+					<div id="box20">		
+						<div id="co">
+							<img src="lost.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Lost</p>
+							<p>2008-11-10</p>
+						</div>
+					</div>
+					<div id="box20">	
+						<div id="co">
+							<img src="GS.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Ghost Stories</p>
+							<p>2014-05-19</p>
+						</div>
+					</div>
+					<div id="box20">	
+						<div id="co">
+							<img src="Coldplay Live 2012.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Coldplay Live 2012</p>
+							<p>2012-11-19</p>
+						</div>
+					</div>
+					<div id="box20">		
+						<div id="co">
+							<img src="mylo.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Mylo Xyloto </p>
+							<p>2011-10-24 </p>
+						</div>
+					</div>
+					<div id="box20">
+						<div id="co">
+							<img src="g.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p> Global Citizen – EP 1</p>
+							<p>2018-11-30 </p>
+						</div>
+					</div>
+				</section>
+				<section id="two">
+					<div id="box20">			
+						<div id="co">
+							<img src="li.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Live in Madrid </p>
+							<p>2011-11-19</p>
+						</div>
+					</div>
+					<div id="box20">		
+						<div id="co">
+							<img src="re.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Remixes </p>
+							<P>2003-07-21</p>
+						</div>
+					</div>
+					<div id="box20">	
+						<div id="co">
+							<img src="ev.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p> Every Teardrop Is a Waterfall</p>
+							<p>2011-06-26 </p>
+						</div>
+					</div>
+					<div id="box20">	
+						<div id="co">
+							<img src="min.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Mince Spies </p>
+							<p>2001-11-30</p>
+						</div>
+					</div>
+					<div id="box20">	
+						<div id="co">
+							<img src="ad.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p> Adventure of a Lifetime</p>
+							<p>2015-11-07</p> 
+						</div>
+					</div>
+					<div id="box20">		
+						<div id="co">
+							<img src="liv.png" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Live in Buenos Aires</p>
+							<p>2018-12-07</p>
+						</div>
+					</div>
+					<div id="box20">
+						<div id="co">
+							<img src="le.jpg" width="100%" height="">
+						</div>
+						<div id="te">
+							<p>Left Right Left Right Left</p>
+							<p>2009-05-15</p>
+						</div>
+					</div>
+				</section>
+				<div id="box15">
+					<img src="coldp.png" width="300px" height="200px">
+				</div>
+			</aside>
+		</main>
+		<div id="box16">
+			<h6>※更多乐队※</h6>
+			<div id="box13">
+				<div id="A">
+				<img src="m.jpg" width="150px" height="150px">
+				<li><a href="https://baike.baidu.com/item/魔力红/1993987">Maroon5</a></li>
+				</div>
+				<div id="B">
+				<img src="lp.jpg" width="150px" height="150px">
+				<li><a href="https://baike.baidu.com/item/linkin%20park/152011">Linkin park</a></li>
+				</div>
+				<div id="C">
+				<img src="be.jpeg" width="150px" height="150px">	
+				<li><a href="https://baike.baidu.com/item/Beyond/105997">Beyond</a></li>
+				</div>
+				<div id="D">
+				<img src="gre.jpeg" width="150px" height="150px">	
+				<li><a href="https://baike.baidu.com/item/%E7%BB%BF%E6%97%A5?fromtitle=GreenDay&fromid=2999428">Greenday</a></li>
+				</div>
+				<div id="E">
+				<img src="tb.jpeg" width="150px" height="150px">
+				<li><a href="https://baike.baidu.com/item/The%20Beatles/67366?fr=aladdin">The Beatles</a></li>	
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="box18">
+				<img src="乐队剪影.png" width="80px" height="80px">
+			</div>
+			<div id="box19">
+				版权所有 © 2021 C：/User/Louise/Desktop/web作品/index.html
+			</div>
+		</footer>
+	</body>
+</html>
